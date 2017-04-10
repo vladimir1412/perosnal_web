@@ -1,0 +1,122 @@
+.tools {
+    background: url("../images/pattern.jpg");
+    height: auto;
+    padding: 5%;
+    margin: 5% 0;
+    display: block;
+    text-align: center;
+
+    .skill-container {
+        background-color: white;
+        padding: 3%;
+
+        .skill-set {
+            display: block;
+            text-align: center;
+
+            .skill {
+                display: inline-block;
+                margin: 4px 1.04167%;
+                width: 25vw;
+                height: 22rem;
+                text-align: center;
+                padding-top: 160px;
+                overflow: hidden;
+                background-repeat: no-repeat!important;
+                background-size: auto 130px!important;
+                background-position: center top!important;
+
+                &:nth-child(1) {
+                    background: url("../images/icon-dev.svg");
+                }
+
+                &:nth-child(2) {
+                    background: url("../images/icon-web.svg");
+                }
+
+                &:nth-child(3) {
+                    background: url("../images/icon-ui.svg");
+                }
+
+                p {
+                    padding-top: 2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        .review {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        blockquote {
+            line-height: 2.6em;
+            font-style: italic;
+            clear: both;
+            padding-top: 60px;
+            border-top: 1px dashed #bec6d0;
+            text-align: center;
+            font-size: 1.30em;
+
+            .round {
+                margin: 0 auto;
+                border-radius: 50%;
+                overflow: hidden;
+                width: 90px;
+                height: 90px;
+                border: 1px solid #bec6d0;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+@media #{$mobile} {
+    .skill-container {
+        .skill-set {
+            .skill {
+                width: 100%!important;
+            }
+        }
+
+        .review {}
+
+        blockquote {
+            .round {
+                img {}
+            }
+        }
+    }
+}
+@media #{$tablet} {
+    .skill-container {
+        .skill-set {
+            .skill {
+                width: 80%!important;
+            }
+        }
+
+        .review {}
+
+        blockquote {
+            .round {
+                img {}
+            }
+        }
+    }
+}
+@media #{$laptop} {
+    .skill-container {
+        .skill-set {
+            .skill {
+                height: 25rem!important;
+            }
+        }
+    }
+}

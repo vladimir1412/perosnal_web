@@ -1,0 +1,347 @@
+.about {
+    display: block;
+    text-align: center;
+    height: auto;
+
+
+    .about_me {
+        display: inline-block;
+        width: 60vw;
+        height: 25rem;
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-filter: grayscale(100%);
+        -moz-transition: 0.5s ease-in-out;
+        -o-filter: grayscale(100%);
+        -o-transition: 0.5s ease-in-out;
+
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            -webkit-transition: 0.5s ease-in-out;
+            -moz-filter: grayscale(0%);
+            -moz-transition: 0.5s ease-in-out;
+            -o-filter: grayscale(0%);
+            -o-transition: 0.5s ease-in-out;
+        }
+
+        .about-image {
+            width: 30vw;
+            height: 100%;
+            background-size: cover;
+            background-position: bottom;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            float: right;
+        }
+
+        .about_image_one {
+            background-image: url("../images/profile.jpg");
+        }
+
+        .about_image_two {
+            background-image: url("../images/what_i_do.jpg");
+            display: block;
+            float: left;
+        }
+
+        .about_image_three {
+            background-image: url("../images/neat_facts.jpg");
+            display: block;
+        }
+
+        .about-text {
+            padding-top: 3rem;
+            padding-left: none;
+
+            h3 {
+                font-size: 1.5em;
+
+                .fa {
+                    padding-right: 1vw;
+                }
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+
+        .about_text_left {
+            width: 28vw;
+
+            h3 {
+                float: left;
+            }
+
+            p {
+                padding-top: 8vh;
+            }
+        }
+
+        .about_text_right {
+            width: 28vw;
+            float: right;
+
+            h3 {
+                float: right;
+            }
+
+            p {
+                padding-top: 8vh;
+            }
+        }
+    }
+}
+// About media queries
+@media #{$mobile} {
+    .about {
+        h2 {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .about_me {
+            display: inline-block;
+            width: 100vw;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+
+            .about-image {
+                height: 25rem;
+                width: 100%;
+                margin-top: 5%;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                float: none;
+                -webkit-filter: grayscale(0%);
+            }
+
+            .about_image_one {
+                background-image: url("../images/profile.jpg");
+            }
+
+            .about_image_two {
+                display: none;
+            }
+
+            .about_image_three {
+                display: none;
+            }
+
+            .about-text {
+                width: 90vw;
+                padding-top: 50px;
+                padding-left: 10%;
+                position: relative;
+
+                h3 {
+                    .fa {
+                        padding-right: 15px;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                    word-break: break-all;
+                }
+            }
+
+            .about_text_left {
+                h3 {
+                    float: left;
+                }
+
+                p {
+                    margin-top: 50px;
+                }
+            }
+
+            .about_text_right {
+                float: none;
+
+                h3 {
+                    float: left;
+                }
+
+                p {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+@media #{$tablet} {
+    .about {
+        display: block;
+        text-align: center;
+        height: auto;
+        padding-bottom: 150px;
+
+        h2 {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .about_me {
+            display: inline-block;
+            width: 100vw;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+
+            .about-image {
+                height: 30rem!important;
+                width: 100%;
+                margin-top: 5%;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                float: none;
+                -webkit-filter: grayscale(0%);
+            }
+
+            .about_image_one {
+                background-image: url("../images/profile.jpg");
+            }
+
+            .about_image_two {
+                display: none;
+            }
+
+            .about_image_three {
+                display: none;
+            }
+
+            .about-text {
+                width: 90vw;
+                padding-top: 50px;
+                padding-left: 10%;
+                position: relative;
+
+                h3 {
+                    .fa {
+                        padding-right: 15px;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+            .about_text_left {
+                h3 {
+                    float: left;
+                }
+
+                p {
+                    margin-top: 50px;
+                }
+            }
+
+            .about_text_right {
+                float: none;
+
+                h3 {
+                    float: left;
+                }
+
+                p {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+@media #{$laptop} {
+    .about {
+        display: block;
+        text-align: center;
+        height: auto;
+        padding-bottom: 150px;
+
+        h2 {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+
+        .about_me {
+            display: inline-block;
+            width: 100vw;
+            -webkit-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            -o-filter: grayscale(0%);
+
+            .about-image {
+                height: 40rem!important;
+                width: 100%;
+                margin-top: none;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                float: none;
+                -webkit-filter: grayscale(0%);
+            }
+
+            .about_image_one {
+                background-image: url("../images/profile.jpg");
+            }
+
+            .about_image_two {
+                background-image: url("../images/profile.jpg");
+                display: none;
+            }
+
+            .about_image_three {
+                background-image: url("../images/profile.jpg");
+                display: none;
+            }
+
+            .about-text {
+                width: 90vw;
+                padding-top: 50px;
+                padding-left: 10%;
+                position: relative;
+
+                h3 {
+                    .fa {
+                        padding-right: 15px;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+
+            .about_text_left {
+                h3 {
+                    float: left;
+                }
+
+                p {
+                    margin-top: 50px;
+                }
+            }
+
+            .about_text_right {
+                float: none;
+
+                h3 {
+                    float: left;
+                }
+
+                p {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,184 @@
+.home {
+    background-image: url("../images/bg_home.jpg");
+    position: relative;
+
+    .home_greeting {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        width: 80vw;
+        text-align: center;
+        -webkit-animation-delay: -2s; /* Chrome, Safari, Opera */
+    animation-delay: -2s;
+
+        .header-text {
+            display: inline-block;
+            padding: 10px;
+            font-size: 5rem;
+            color: white;
+            opacity: 0.8;
+            letter-spacing: 7px;
+
+        }
+        .typewriter {
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: 0.15em solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: 0.15em;
+            /* Adjust as needed */
+            animation: typing 2.3s steps(40,end)  ,blink-caret .75s step-end infinite;
+            width: 23rem;
+
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 22rem;
+            }
+        }
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+    }
+
+}
+// Home media queries
+@media #{$mobile} {
+    .home {
+        .home_greeting {
+            width: 90vw;
+            border-bottom: 2px solid #ffffff;
+            .header-text {
+                font-size: 2.5rem!important;
+                opacity: 1;
+                border: none;
+                margin: 0;
+            }
+        }
+
+        .typewriter h3 {
+            animation: typing 2s steps(40,end),blink-caret .75s step-end infinite;
+            width: 100%;
+            font-size: 1rem!important;
+
+        }
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+    }
+}
+@media #{$tablet} {
+    .home {
+        .home_greeting {
+            width: 95vw;
+            border-bottom: 2px solid #ffffff;
+
+            .header-text {
+                font-size: 2.2rem!important;
+                width: 95vw;
+                opacity: 1;
+                border: none;
+                margin: 0;
+            }
+        }
+
+        .typewriter h3 {
+            font-size: 1rem!important;
+            width: 300px;
+        }
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 290px;
+            }
+        }
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+    }
+}
+@media #{$laptop} {
+    .home {
+        .home_greeting {
+            width: 100vw;
+            text-align: center;
+            margin-bottom: 5rem;
+
+            .header-text {
+                width: 70%;
+                display: inline-block;
+                border: 10px solid white;
+                font-size: 3.5rem!important;
+                padding: 10px;
+                margin-bottom: 15px;
+                color: white;
+                opacity: 0.8;
+                letter-spacing: 7px;
+            }
+        }
+
+        .typewriter h3 {
+            width: 330px;
+        }
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 330px;
+            }
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.contact {
+    background: url("../images/sativa.png");
+    height: auto;
+    padding: 5%;
+    margin: 0;
+    display: block;
+    position: relative;
+    height: 50rem;
+
+    form {
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%,-50%, 0);
+
+            .row {
+                label {
+                    font-size: 1.9em;
+
+                }
+
+                input {
+                    border: none;
+                    border-radius: 3px;
+                    border: $border;
+                    height: 40px;
+                    width: 30vw;
+                    margin: 7px 0;
+                    box-shadow: 0 17px 15px -10px rgba(0,0,0,0.6);
+                    transition: all ease-in-out 300ms;
+                    font-size: 1.5em;
+                    padding-left: 0.5rem;
+                    outline: 0;
+                    &:hover,&:focus{
+                        border: 2px solid #78909C;
+                        outline: 0;
+                        box-shadow: 0 17px 10px -10px rgba(0,0,0,0.4);
+                        transform: translateY(-7px);
+                    }
+                }
+
+                textarea {
+                    border: none;
+                    border-radius: 3px;
+                    border: $border;
+                    height: 220px;
+                    width: 30vw;
+                    box-shadow: 0 17px 15px -10px rgba(0,0,0,0.6);
+                    transition: all ease-in-out 300ms;
+                    font-size: 1.5em;
+                    outline: 0;
+                    &:hover,&:focus{
+                        border: 2px solid #78909C;
+                        outline: 0;
+                        box-shadow: 0 17px 10px -10px rgba(0,0,0,0.4);
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+
+            .button {
+                background-color: #3498db;
+                color: #cccccc;
+                border: none;
+                border-radius: 0;
+                text-transform: uppercase;
+                height: 40px;
+                width: 30vw;
+                margin-top: 5%;
+                box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+                transition: all 0.3s ease 0s;
+                cursor: pointer;
+                outline: none;
+                font-size: 1.3em;
+
+                &:focus,
+                &:hover {
+                    background-color: #337ab7;
+                    color: #cccccc;
+                    box-shadow: 0 17px 10px -10px rgba(0,0,0,0.4);
+                    transform: translateY(-7px);
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}
+@media #{$mobile} {
+    form {
+        height: 40rem;
+
+        .container {
+            .row {
+                label {}
+
+                input {
+                    width: 80vw!important;
+                }
+
+                textarea {
+                    width: 80vw!important;
+                }
+            }
+
+            .button {
+                width: 80vw!important;
+
+                &:focus,
+                &:hover {}
+            }
+        }
+    }
+}
+@media #{$tablet} {
+    form {
+        height: 40rem;
+
+        .container {
+            .row {
+                label {}
+
+                input {
+                    width: 70vw!important;
+                }
+
+                textarea {
+                    width: 70vw!important;
+                }
+            }
+
+            .button {
+                width: 70vw!important;
+            }
+        }
+    }
+}
+@media #{$laptop} {
+    form {
+        height: 40rem;
+
+        .container {
+            .row {
+                label {}
+
+                input {
+                    width: 60vw!important;
+                }
+
+                textarea {
+                    width: 60vw!important;
+                }
+            }
+
+            .button {
+                width: 60vw!important;
+            }
+        }
+    }
+}

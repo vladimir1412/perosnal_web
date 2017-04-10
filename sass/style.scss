@@ -1,0 +1,40 @@
+@import 'base/variables';
+@import 'base/navigation';
+@import 'base/home';
+@import 'base/about';
+@import 'base/tools';
+@import 'base/portfolio';
+@import 'base/contact';
+@import 'base/footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+    font-family: "Helvetica Neue", Arial, Montserrat, sans-serif;
+}
+
+p {
+    font-size: 1.30em;
+}
+
+.parallax {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 10vh;
+        padding-top: 5rem;
+    }
+}
